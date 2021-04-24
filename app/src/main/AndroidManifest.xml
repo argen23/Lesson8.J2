@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lesson8J2">
-        <activity android:name=".game_activity"></activity>
+        <activity android:name=".game_activity_2level"></activity>
+        <activity android:name=".game_activity2_level" />
+        <activity android:name=".game_activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

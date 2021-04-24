@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chto"
+    android:padding="10dp"
+    tools:context=".game_activity_2level">
+
+<Button
+    android:id="@+id/btn_guess2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="20dp"
+    android:text="кто из мстителей щелкнул пальцами?"
+
+    />
+
+
+    <ImageView
+        android:id="@+id/image_guess_avengers"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/whoisit"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guess2"
+        />
+
+    <EditText
+        android:id="@+id/edTXT2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_guess_avengers"
+        android:background="@color/white"
+        android:layout_marginTop="50dp"
+        android:padding="6dp"
+        android:textSize="18dp"
+        android:hint="enter answer..."
+        android:textAlignment="center"
+
+        />
+    <Button
+        android:id="@+id/check_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTXT2"
+        android:layout_marginTop="40dp"
+        android:text="check"
+        />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginBottom="40dp"
+    android:textColor="@color/teal_700"
+    android:text="подсказка : у него железная рука"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

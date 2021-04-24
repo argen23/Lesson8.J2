@@ -13,7 +13,6 @@ public class game_activity extends AppCompatActivity {
 
     EditText editText;
     String userAnswer;
-    String adminAnswer;
     Button check_button;
     boolean isCheck;
 
@@ -37,6 +36,11 @@ public class game_activity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void game2level(View view) {
+        Intent intent = new Intent(game_activity.this,game_activity_2level.class);
+        startActivity(intent);
     }
 //        initViews();
       // initClickers();
